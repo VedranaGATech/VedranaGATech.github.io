@@ -1,0 +1,55 @@
+/* CSS USED TO STYLE BOXES IN THE MEDIA QUERY DEMO */
+body{
+    background: lightgrey;
+}
+
+/* specify the dims for all the boxes in the page*/
+.box{
+    width: 200px; 
+    height: 200px;
+}
+
+.greenbox{
+    /* color the box green*/
+    background: green;
+}
+
+.bluebox{
+    /* color the box green*/
+    background: blue;
+}
+.violetbox{
+    /* color the box green*/
+    background: purple;
+}
+.redbox{
+    /* color the box green*/
+    background: red;
+}
+.yellowbox{
+    /* color the box green*/
+    background: yellow;
+}
+/* use @media handle to implement a demia query*/
+@media (max-width: 600px)
+{
+    /*modify green box*/
+    .greenbox{
+        background: orange;
+    }
+    /*modify red box with round black edges*/
+    .redbox{
+        border-radius: 25%;
+        border: solid  2px black;
+    }
+    /*modify blue box to spin */
+    .bluebox{
+        transform: rotate(360deg);
+        transition: transform 0.7s ease-in;
+    }
+
+    /*male the violet box disappear*/
+    .violetbox{
+        display: none;
+    }
+}
