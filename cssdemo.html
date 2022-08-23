@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"         
     crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="nav_styles.css">
+    
   </head>
   
   <body>
     <h1>Welcome to CSS Demo site!</h1>
     <nav>
-      <ul class="nav nav-pills nav-fill">
+      <ul class="nav nav-pills nav-fill primaryNav">
         <li class="nav-item"><a href="index.html">Home</a></li>
         <li class="nav-item"><a href="headings.html">Heading Demo</a></li>
         <li class="nav-item"><a href="textdemo.html">Text Demo</a></li>
@@ -36,7 +39,7 @@
         <li class="nav-item"><a href="mediaQueryDemo.html">Media Query Demo</a></li>
       </ul>
        <!--secondary navigation on smaller screens-->
-       <br><div class="dropdown show">
+       <br><div class="dropdown show secondaryNav">
         <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Navigation List
         </a>
@@ -49,7 +52,7 @@
           <a class="dropdown-item" href="numberlist.html">Ordered List Demo</a>
           <a class="dropdown-item" href="tables.html">Table Demo 1</a>
           <a class="dropdown-item" href="tables2.html">Table Demo 2 - Pets</a>
-          <a class="dropdown-item" href="cssdemo.html">CSS DEMO</a>
+          <a class="dropdown-item active" href="cssdemo.html">CSS DEMO</a>
           <a class="dropdown-item" href="travel.html">Dream Vacation Page</a>
           <a class="dropdown-item" href="bootstrap_demo.html">Bootstrap Demo</a>
           <a class="dropdown-item" href="mediaQueryDemo.html">Media Query Demo</a>
